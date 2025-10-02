@@ -34,9 +34,25 @@ header {
     font-family: "Alata", sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    position: relative;
+}
+
+header #header-container-nav-navBar-checkbox:checked~.header-container-nav-navBar-menu {
+    max-height: 80vh;
+}
+
+header #header-container-nav-navBar-checkbox:not(:checked)~.header-container-nav-navBar-menu {
+    padding: 0;
+}
+
+header #header-container-nav-navBar-checkbox:not(:checked)~label>img {
+    content: url("../images/icon-hamburger.svg");
 
 }
 
+#header-container-nav-navBar-checkbox {
+    display: none;
+}
 
 .header-container-nav-navBar-burger:hover {
     cursor: pointer;
@@ -69,6 +85,7 @@ header {
     text-transform: uppercase;
     font-size: 3.2rem;
     padding: 1rem 1.5rem;
+    white-space: pre-line;
 }
 
 
@@ -360,6 +377,8 @@ footer {
     .creations-container-img2 {
         content: url(../images/desktop/image-night-arcade.jpg);
         width: 22%;
+        position: relative;
+        z-index: 0;
     }
 
     .creations-container-img3 {
@@ -400,11 +419,16 @@ footer {
     .creations-container-img6-content h3,
     .creations-container-img7-content h3,
     .creations-container-img8-content h3 {
-        border: 2px solid red;
+        width: 32%;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1.9rem;
+        color: rgb(255, 0, 0);
         position: absolute;
-        bottom: 2rem;
-        left: 50%;
+        bottom: 1.7rem;
+        left: 2rem;
         z-index: 9000;
-
     }
+
 }
