@@ -1,0 +1,410 @@
+@import url(/assets/css/reset.css);
+
+/* ------HEADER------ */
+
+header {
+    height: 100vh;
+}
+
+.header-container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    position: relative;
+    left: 10%;
+    top: 3rem;
+    z-index: 1;
+}
+
+.header-container-nav-navBar {
+    display: flex;
+}
+
+.header-container-nav-navBar-menu {
+    display: none;
+
+}
+
+.header-container-nav-navBar-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-family: "Alata", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+.header-container-nav-navBar-burger:hover {
+    cursor: pointer;
+}
+
+
+.header-container-gallery-img {
+    background-image: url(../images/mobile/image-hero.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container-gallery-img-content {
+    position: relative;
+    color: white;
+    width: 80%;
+    top: 50%;
+    border: .15rem solid white;
+    left: 10%;
+}
+
+.header-container-gallery-img-content h1 {
+    width: 90%;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    padding: 1rem 1.5rem;
+}
+
+
+/* ------MAIN------ */
+
+/* ------INTRO------ */
+
+
+.intro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.intro-container-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-container-img img {
+    width: 80%;
+}
+
+.intro-container-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.intro-container-content h2,
+.creations-title h2 {
+    width: 70%;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.intro-container-content p {
+    width: 65%;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(140, 140, 140, 1);
+    line-height: 1.8rem;
+}
+
+/* ------CREATIONS------ */
+
+.creations-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.creations-title-button {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border: 0.15rem solid black;
+    background-color: white;
+    padding: .7rem 4rem;
+    position: relative;
+    top: 112rem;
+}
+
+.creations-title-button:hover {
+    cursor: pointer;
+
+}
+
+.creations-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creations-container-img1,
+.creations-container-img2,
+.creations-container-img3,
+.creations-container-img4,
+.creations-container-img5,
+.creations-container-img6,
+.creations-container-img7,
+.creations-container-img8 {
+    width: 90%;
+    display: flex;
+    position: relative;
+    left: 5%;
+    margin-bottom: 2rem;
+}
+
+
+.creations-container-img1-content h3,
+.creations-container-img2-content h3,
+.creations-container-img3-content h3,
+.creations-container-img4-content h3,
+.creations-container-img5-content h3,
+.creations-container-img6-content h3,
+.creations-container-img7-content h3,
+.creations-container-img8-content h3 {
+    width: 32%;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    color: white;
+    position: absolute;
+    bottom: 1.7rem;
+    left: 2rem;
+}
+
+
+/* ------FOOTER------ */
+
+footer {
+    background-color: rgb(0, 0, 0);
+    height: 65vh;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.footer-menu li {
+    margin-top: 2rem;
+}
+
+.footer-social ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 1.5rem;
+}
+
+.footer-copyright p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgba(105, 105, 105, 1);
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    margin-top: 1.5rem;
+
+}
+
+@media screen and (min-width:576px) {
+    .header-container-nav-navBar-burger {
+        display: none;
+    }
+
+    .header-container-nav-navBar-menu {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    .header-container-gallery-img-content {
+        min-width: 50rem;
+        width: 39%;
+        padding: 1rem;
+    }
+
+    .header-container-gallery-img {
+        background-image: url(../images/desktop/image-hero.jpg);
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .header-container-gallery-img-content h1 {
+        font-size: 4rem;
+        width: 70%;
+
+    }
+
+    .intro-container-img {
+        content: url(../images/desktop/image-interactive.jpg);
+        width: 50%;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 12%;
+    }
+
+    #intro {
+        position: relative;
+    }
+
+
+    .intro-container-content {
+        width: 50%;
+        position: absolute;
+        background-color: #fff;
+        top: 10rem;
+        right: 0;
+        display: flex;
+        align-items: start;
+    }
+
+    .intro-container-content h2 {
+        width: 70%;
+        text-align: left;
+        margin-top: 5rem;
+        padding-left: 8rem;
+    }
+
+    .intro-container-content p {
+        width: 75%;
+        text-align: left;
+        margin-top: .5rem;
+        padding-left: 8rem;
+        font-size: .9rem;
+    }
+
+    .creations-title {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+
+    .creations-title h2 {
+        text-align: left;
+        margin-left: 12%;
+        padding-top: 1rem;
+    }
+
+    .creations-title-button {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 10rem;
+    }
+
+    .creations-container {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 7rem;
+        gap: 2rem;
+    }
+
+    .creations-container-img1 {
+        content: url(../images/desktop/image-deep-earth.jpg);
+        width: 22%;
+    }
+
+    .creations-container-img2 {
+        content: url(../images/desktop/image-night-arcade.jpg);
+        width: 22%;
+    }
+
+    .creations-container-img3 {
+        content: url(../images/desktop/image-soccer-team.jpg);
+        width: 22%;
+    }
+
+    .creations-container-img4 {
+        content: url(../images/desktop/image-grid.jpg);
+        width: 22%;
+    }
+
+    .creations-container-img5 {
+        content: url(../images/desktop/image-from-above.jpg);
+        width: 22%;
+    }
+
+    .creations-container-img6 {
+        content: url(../images/desktop/image-pocket-borealis.jpg);
+        width: 22%;
+    }
+
+    .creations-container-img7 {
+        content: url(../images/desktop/image-curiosity.jpg);
+        width: 22%;
+    }
+
+    .creations-container-img8 {
+        content: url(../images/desktop/image-fisheye.jpg);
+        width: 22%;
+    }
+
+    .creations-container-img1-content h3,
+    .creations-container-img2-content h3,
+    .creations-container-img3-content h3,
+    .creations-container-img4-content h3,
+    .creations-container-img5-content h3,
+    .creations-container-img6-content h3,
+    .creations-container-img7-content h3,
+    .creations-container-img8-content h3 {
+        border: 2px solid red;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        z-index: 9000;
+
+    }
+}
